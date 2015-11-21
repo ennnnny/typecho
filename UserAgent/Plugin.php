@@ -45,13 +45,6 @@ class UserAgent_Plugin implements Typecho_Plugin_Interface
             '16', _t('选择图标尺寸大小'), _t('') );
         $form->addInput($icons->multiMode());
 
-        /** user agent text **/
-//        $text = new Typecho_Widget_Helper_Form_Element_Radio( 'text',  array(
-//            '16'     =>  '16px 大小',
-//            '24'     =>  '24px 大小'),
-//            '16', _t('选择文本字体大小'), _t('') );
-//        $form->addInput($text->multiMode());
-
         /** user agent show **/
         $show = new Typecho_Widget_Helper_Form_Element_Radio( 'show',  array(
             '1'     =>  '只显示图标',
@@ -84,7 +77,6 @@ class UserAgent_Plugin implements Typecho_Plugin_Interface
         $url_img = $url_plugin."img/";
 
         $icons = Typecho_Widget::widget('Widget_Options')->plugin('UserAgent')->icons;
-        //$text = Typecho_Widget::widget('Widget_Options')->plugin('UserAgent')->text;
         $show = Typecho_Widget::widget('Widget_Options')->plugin('UserAgent')->show;
 
         require_once 'useragent-os.php';
