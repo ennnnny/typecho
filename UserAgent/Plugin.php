@@ -87,7 +87,7 @@ class UserAgent_Plugin implements Typecho_Plugin_Interface
         require_once 'useragent-webbrowser.php';
         $wb = detect_webbrowser($agent);
         $wb_img = self::img($wb['code'],"/net/",$wb['title']);
-        $wb_title = $os['title'];
+        $wb_title = $wb['title'];
 
         switch($show){
             case 1:
