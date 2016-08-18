@@ -8,3 +8,12 @@ typecho plugins
 * 在你想显示的位置上加上这段代码：
 
 > <?php UserAgent_Plugin::render($this->agent);?>
+
+
+#### CommentApprove for typecho
+> 根据评论人留的邮箱来进行认证身份
+> 
+> 使用方法：
+* 在你想显示的位置上加上这段代码：
+
+> <?php CommentApprove_Plugin::identify($this->mail);?>
