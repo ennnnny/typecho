@@ -7,7 +7,7 @@ typecho plugins
 > 使用方法：
 * 在你想显示的位置上加上这段代码：
 
- <?php UserAgent_Plugin::render($this->agent);?>
+> '<?php UserAgent_Plugin::render($this->agent);?>'
 
 
 #### CommentApprove for typecho
@@ -16,4 +16,4 @@ typecho plugins
 > 使用方法：
 * 在你想显示的位置上加上这段代码：
 
- <?php CommentApprove_Plugin::identify($this->mail);?>
+> '<?php CommentApprove_Plugin::identify($this->mail);?>'
