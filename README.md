@@ -6,6 +6,7 @@ typecho plugins
 > 
 > 使用方法：
 * 在你想显示的位置上加上这段代码：
+* 请根据自己的模板来判断是使用$this或$comments！(如果不清楚，可以都试下)
 
 > <?php UserAgent_Plugin::render($this->agent);?>
 
@@ -15,5 +16,6 @@ typecho plugins
 > 
 > 使用方法：
 * 在你想显示的位置上加上这段代码：
+* 请根据自己的模板来判断是使用$this或$comments！(如果不清楚，可以都试下)
 
 > <?php CommentApprove_Plugin::identify($this->mail);?>
