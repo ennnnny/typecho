@@ -20,3 +20,16 @@ typecho plugins
 ```php
 <?php CommentApprove_Plugin::identify($this->mail);?>
 ```
+
+#### CaptchaPlus for typecho
+> 评论及后台登录新增验证码
+> 支持geetest（3/4）、hcaptcha、turnstile
+> 使用方法：
+* 后台登录直接插件开启就行，无需改动文件
+* 评论页面验证码需在主题的评论的模板 comments.php 中“提交按钮上面”添加如下字段：
+```php
+<?php CaptchaPlus_Plugin::commentCaptchaRender(); ?>
+```
+* 评论页面验证码还需给评论区域的提交按钮新加唯一ID，以便绑定评论框事件
+
+- 插件修改自：https://github.com/scenery/typecho-plugins
